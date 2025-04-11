@@ -1,0 +1,307 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Farro", sans-serif;
+}
+body{
+    background-color: #222;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('./image/netflix-img2.png');
+    background-size: cover;
+    background-position: center;
+    padding: 12px 8px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+nav button{
+    padding: 8px 18px;
+    border-radius: 5px;
+    background-color: #E50914;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.header-content{
+    position: absolute;
+    color: white;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.header-content h1{
+    font-size: 3em;
+    font-weight: 800;
+}
+.header-content h5{
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+.header-content p{
+    margin-bottom: 0.8em;
+}
+.header-content button{
+    padding: 12px 50px;
+    background-color: #E50914;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.header-content form input{
+    background-color: #222222c9;
+    padding: 12px 80px;
+    border: none;
+    border-radius: 5px;
+}
+
+.logo{
+    width: 150px;
+}
+
+/*  Media Query for header */
+@media (max-width:600px){
+    .header-content h1{
+        font-size: 2em;
+        font-weight: 800;
+    }
+    .header-content h5{
+        font-size: 1.2em;
+    }
+    .header-content p{
+        font-size: 1em;
+        flex-wrap: wrap;
+    }
+    .header-content button{
+        padding: 12px 30px;
+    }
+    .header-content form input{
+        background-color: #222222c9;
+        padding: 12px 40px;
+    }
+
+}
+@media (max-width:394px){
+    .header-content button{
+        padding: 12px 4px;
+    }
+    .header-content form input{
+        padding: 12px 20px;
+    }
+}
+
+/* main */
+.main{
+    width: 80%;
+    margin: auto;
+    margin-top: 3em;
+    
+}
+.main h2{
+    font-size: 2em;
+    color: #BFB4B5;
+    
+}
+.carousel-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+.logo2{
+    width: 150px;
+    border-radius: 10px;
+}
+/* main media query */
+@media (max-width:974px){
+    .logo2{
+        width: 100px;
+    }
+}
+@media (max-width:682px){
+    .logo2{
+        width: 80px;
+    }
+}
+@media (max-width:522px){
+    .logo2a{
+        display: none;
+    }
+    .logo2{
+        width: 100px;
+    }
+}
+
+/* Card Section */
+.crd-section{
+    display: flex;
+    gap: 2em;
+    width: 80%;
+    /* height: 50vh; */
+    margin:auto;
+    text-align: center;
+
+}
+.crd-h2{
+    width: 80%;
+    margin: auto;
+    color: #BFB4B5;
+    margin-top: 100px;
+}
+.card-body{
+    width: 40px;
+    height: 300px;
+    background-color: #2C2929;
+    border: 2px solid rgba(128, 128, 128, 0.473);
+    padding: 20px;
+    border-radius: 20px;
+}
+.card-body h5{
+    color: white;
+    text-align: left;
+}
+.card-body p{
+    color: #BFB4B5;
+    text-align: left;
+}
+
+/* Card section query */
+@media (max-width:999px){
+    .crd-section{
+        flex-direction: column;
+    }
+    .card-body{
+        width: 100%;
+        height: 100px;
+    }
+}
+@media (max-width:622px){
+    .card-body{
+        height: 200px;
+    }
+}
+
+/* Accordion-section */
+.acord-sect{
+    width: 80%;
+    margin: 100px auto;
+
+}
+
+.accordion-button{
+    background-color: #2C2929;
+    border: 2px solid rgba(128, 128, 128, 0.356);
+    color: white;
+}
+.h1{
+    color: white;
+}
+.accordion-body{
+    background-color: #2C2929;
+    border: 2px solid rgba(128, 128, 128, 0.356);
+    color: white;
+}
+
+/* accordion media query */
+@media (max-width:507px){
+    .h1{
+        font-size: 1em;
+    }
+}
+
+/* Section signin */
+.sect-signin{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.sect-signin p{
+    color: #BFB4B5;
+}
+.sect-signin form input{
+    background-color: #222222;
+    padding: 12px 80px;
+    border: 2px solid rgba(128, 128, 128, 0.76);
+    border-radius: 5px;
+}
+.signin-button2{
+    padding: 12px 50px;
+    background-color: #E50914;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+/* section signin media query */
+@media (max-width:600px){
+    .signin-button2{
+        padding: 12px 30px;
+    }
+    .sect-signin form input{
+        background-color: #222222c9;
+        padding: 12px 40px;
+    }
+}
+
+@media (max-width:394px){
+    .signin-button2{
+        padding: 12px 4px;
+    }
+    .sect-signin form input{
+        padding: 12px 20px;
+    }
+    }
+
+    /* footer section */
+
+footer{
+    width: 80%;
+    margin: 100px auto;
+}
+.quest p a{
+    color: #BFB4B5;
+}
+.footer-list{
+    display: flex;
+    align-items: center;
+    gap: 5em;
+    line-height: 2em;
+    /* flex-wrap: wrap;     */
+}
+.list-sect li a{
+    color: #BFB4B5;
+}
+.english{
+    background-color: #2C2929;
+    border-radius: 20px;
+    border: 2px soild gray;
+    padding: 6px 18px;
+    color: white;
+}
+.footer-text p{
+    color: #BFB4B5;
+}
+    /* footer media query */
+
+@media (max-width:1011px){
+    .footer-list{
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
